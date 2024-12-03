@@ -11,7 +11,7 @@
                 var lines = File.ReadAllLines(filepath);
                 var colA = new List<int>();
                 var colB = new List<int>();
-
+                
                 foreach (var item in lines)
                 {
                     var cols = item.Split("   ");
@@ -27,8 +27,8 @@
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return (null, null);
             }
+            return (null, null);
         }
 
         public static int Day1_1() 
